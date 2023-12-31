@@ -120,6 +120,14 @@
       src="_next/static/sYITaXtL1HkCpSf5jaP2H/_ssgManifest.js"
       defer=""
     ></script>
+    <script>
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = 'https://chatbot.snabbvaccin.se/embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+      });
+    </script>
     <style
       data-href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     >
@@ -727,6 +735,18 @@
     <div id="__next">
       <div class="page">
         <style>
+          html,
+          body {
+            overflow: auto;
+          }
+
+          .book-cta iframe {
+            max-width: 100%;
+            height: auto;
+            border: none;
+            overflow-y: auto; /* allows scrolling within the iframe */
+            z-index: 1300;
+          }
           #nprogress {
             pointer-events: none;
           }
@@ -1190,6 +1210,31 @@
         "defaultLocale": "en",
         "scriptLoader": []
       }
+    </script>
+    
+    <!-- <script>
+      window.addEventListener("load", function () {
+        var interval = setInterval(function () {
+          var container = document.querySelector(".book-cta");
+          if (container) {
+            clearInterval(interval);
+            setTimeout(function () {
+              // Clear existing content
+              container.innerHTML = "";
+
+              // Create the iframe element
+              var iframe = document.createElement("iframe");
+              iframe.src = "https://chatbot.snabbvaccin.se/";
+              iframe.style.width = "100%";
+              iframe.style.height = "400px"; // Adjust as needed
+              iframe.frameBorder = "0";
+
+              // Append the iframe to the container
+              container.appendChild(iframe);
+            }, 500); // Adjust this delay as necessary
+          }
+        }, 100); // Check every 100 milliseconds
+      }); -->
     </script>
   </body>
 </html>

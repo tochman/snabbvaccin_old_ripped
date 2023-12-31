@@ -300,10 +300,10 @@
                     className: "select-date-text",
                     children: "K\xf6p TBE-Vaccin Online ",
                   }),
-                  // (0, i.jsx)("div", {
-                  //   className: "material-symbols-rounded book-now-cta-icon",
-                  //   children: "shopping_cart",
-                  // }),
+                  (0, i.jsx)("div", {
+                    className: "material-symbols-rounded book-now-cta-icon",
+                    children: "shopping_cart",
+                  }),
                 ],
               }),
             }),
