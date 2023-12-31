@@ -120,12 +120,26 @@
       src="_next/static/sYITaXtL1HkCpSf5jaP2H/_ssgManifest.js"
       defer=""
     ></script>
-    <script>
-      window.addEventListener('load', function() {
-        var script = document.createElement('script');
-        script.src = 'https://chatbot.snabbvaccin.se/embed.js';
-        script.async = true;
-        document.body.appendChild(script);
+    <script defer>
+      window.addEventListener("load", function () {
+        var container = document.querySelector(".book-cta");
+        if (container) {
+          // Clear existing content of the container
+          container.innerHTML = "";
+
+          // Create the div element for the chatbot
+          var botDiv = document.createElement("div");
+          botDiv.id = "vaccin_bot"; // Setting the ID to "vaccin_bot"
+
+          // Append the div to the container
+          container.appendChild(botDiv);
+
+          // Assuming you want to load the chatbot script here
+          var script = document.createElement("script");
+          script.src = "https://chatbot.snabbvaccin.se/embed.js"; // URL to your chatbot embed script
+          script.async = true;
+          document.body.appendChild(script);
+        }
       });
     </script>
     <style
@@ -1211,30 +1225,24 @@
         "scriptLoader": []
       }
     </script>
-    
-    <!-- <script>
+
+    <script>
       window.addEventListener("load", function () {
-        var interval = setInterval(function () {
-          var container = document.querySelector(".book-cta");
-          if (container) {
-            clearInterval(interval);
-            setTimeout(function () {
-              // Clear existing content
-              container.innerHTML = "";
+        var container = document.querySelector(".book-cta");
+        if (container) {
+          clearInterval(interval);
+          setTimeout(function () {
+            // Clear existing content
+            container.innerHTML = "";
 
-              // Create the iframe element
-              var iframe = document.createElement("iframe");
-              iframe.src = "https://chatbot.snabbvaccin.se/";
-              iframe.style.width = "100%";
-              iframe.style.height = "400px"; // Adjust as needed
-              iframe.frameBorder = "0";
+            // Create the iframe element
+            var bot = document.createElement("div");
 
-              // Append the iframe to the container
-              container.appendChild(iframe);
-            }, 500); // Adjust this delay as necessary
-          }
-        }, 100); // Check every 100 milliseconds
-      }); -->
+            // Append the iframe to the container
+            container.appendChild(iframe);
+          }, 500); // Adjust this delay as necessary
+        }
+      });
     </script>
   </body>
 </html>
