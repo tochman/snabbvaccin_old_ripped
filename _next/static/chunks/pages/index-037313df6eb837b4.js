@@ -298,12 +298,12 @@
                 children: [
                   (0, i.jsx)("div", {
                     className: "select-date-text",
-                    children: "K\xf6p TBE-Vaccin Online Nu",
+                    children: "K\xf6p TBE-Vaccin Online ",
                   }),
-                  (0, i.jsx)("div", {
-                    className: "material-symbols-rounded book-now-cta-icon",
-                    children: "shopping_cart",
-                  }),
+                  // (0, i.jsx)("div", {
+                  //   className: "material-symbols-rounded book-now-cta-icon",
+                  //   children: "shopping_cart",
+                  // }),
                 ],
               }),
             }),
@@ -586,62 +586,62 @@
                 }),
               ],
             }),
-            (0, i.jsxs)("div", {
-              className: "map-section-wrapper",
-              children: [
-                (0, i.jsx)("div", {
-                  className: "map-section",
-                  id: "locations-map-section",
-                  children: (0, i.jsxs)(c.ZP, {
-                    mapboxAccessToken:
-                      "pk.eyJ1IjoidG9hc3R5c2Ftd2ljaCIsImEiOiJjbGVzd3Q0c3AwNDBqM3dwYnhrZzY0OWI0In0.-0Jmpjh8-SKWnH46Y-NBKA",
-                    scrollZoom: !1,
-                    viewState: T,
-                    onDrag(e) {
-                      _({
-                        longitude: e.viewState.longitude,
-                        latitude: e.viewState.latitude,
-                        zoom: 7,
-                      });
-                    },
-                    initialViewState: {
-                      longitude: 11.9670171,
-                      latitude: 57.7072326,
-                      zoom: 7,
-                    },
-                    mapStyle:
-                      "mapbox://styles/toastysamwich/clesx5h5m007g01qrw78fyzhn",
-                    children: [
-                      (0, i.jsx)(c.$j, {
-                        positionOptions: { enableHighAccuracy: !0 },
-                        trackUserLocation: !0,
-                      }),
-                      b.map((e) =>
-                        (0, i.jsx)(c.Jx, {
-                          longitude: e.fields.geoLocation.lon,
-                          latitude: e.fields.geoLocation.lat,
-                          onClick() {
-                            window.scrollTo(0, 0), p(e);
-                          },
-                          color: "#10AC73",
-                        })
-                      ),
-                    ],
-                  }),
-                }),
-                (0, i.jsx)("div", {
-                  className: "map-locations-overlay",
-                  children: b.map((e) =>
-                    (0, i.jsx)(x.Z, {
-                      data: e,
-                      onClick(e) {
-                        window.scrollTo(0, 0), p(e);
-                      },
-                    })
-                  ),
-                }),
-              ],
-            }),
+            // (0, i.jsxs)("div", {
+            //   className: "map-section-wrapper",
+            //   children: [
+            //     (0, i.jsx)("div", {
+            //       className: "map-section",
+            //       id: "locations-map-section",
+            //       children: (0, i.jsxs)(c.ZP, {
+            //         mapboxAccessToken:
+            //           "pk.eyJ1IjoidG9hc3R5c2Ftd2ljaCIsImEiOiJjbGVzd3Q0c3AwNDBqM3dwYnhrZzY0OWI0In0.-0Jmpjh8-SKWnH46Y-NBKA",
+            //         scrollZoom: !1,
+            //         viewState: T,
+            //         onDrag(e) {
+            //           _({
+            //             longitude: e.viewState.longitude,
+            //             latitude: e.viewState.latitude,
+            //             zoom: 7,
+            //           });
+            //         },
+            //         initialViewState: {
+            //           longitude: 11.9670171,
+            //           latitude: 57.7072326,
+            //           zoom: 7,
+            //         },
+            //         mapStyle:
+            //           "mapbox://styles/toastysamwich/clesx5h5m007g01qrw78fyzhn",
+            //         children: [
+            //           (0, i.jsx)(c.$j, {
+            //             positionOptions: { enableHighAccuracy: !0 },
+            //             trackUserLocation: !0,
+            //           }),
+            //           b.map((e) =>
+            //             (0, i.jsx)(c.Jx, {
+            //               longitude: e.fields.geoLocation.lon,
+            //               latitude: e.fields.geoLocation.lat,
+            //               onClick() {
+            //                 window.scrollTo(0, 0), p(e);
+            //               },
+            //               color: "#10AC73",
+            //             })
+            //           ),
+            //         ],
+            //       }),
+            //     }),
+            //     (0, i.jsx)("div", {
+            //       className: "map-locations-overlay",
+            //       children: b.map((e) =>
+            //         (0, i.jsx)(x.Z, {
+            //           data: e,
+            //           onClick(e) {
+            //             window.scrollTo(0, 0), p(e);
+            //           },
+            //         })
+            //       ),
+            //     }),
+            //   ],
+            // }),
             (0, i.jsxs)("div", {
               className: "explainer-section",
               children: [
