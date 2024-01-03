@@ -1231,6 +1231,20 @@
       src="https://chatbot.snabbvaccin.se/embed.js"
     ></script>
     <script type="module">
+      window.addEventListener("load", ()=>{
+        const navBarElement = document.querySelector('.hero-header-nav')
+        const newButton = document.createElement('div');
+        const newButtonText = document.createElement('div');
+        newButton.className = 'book-cta white'
+        newButtonText.className = 'select-date-text'
+        newButtonText.innerText = "Kliniker"
+        newButton.appendChild(newButtonText)
+        navBarElement.appendChild(newButton)
+        newButton.addEventListener('click', ()=> {
+          window.open('https://nyalegehuset.se', '_blank');
+
+        } )
+      });
       // mountChatbot(".book-cta");
     </script>
   </body>
